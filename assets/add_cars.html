@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Online book sales</title>
+</head>
+<body>
+    <header class='page-header'>
+
+        <div class = 'logo'>
+            <h1>
+                Buy it 
+                <span class = 'black-logo'>online</span>
+                !
+            </h1>
+        </div>
+
+        <div class = 'nav-bar'>
+            <nav class = 'navigator'>
+                <button type='button' class='nav-button'> Home </button>
+                <button type='button' class='nav-button'> Search books </button>
+                <button type='button' class='nav-button'> Add books </button>
+                <button type='button' class='nav-button'> Contact </button>
+                <button type='button' class='nav-button'> Log in </button>
+            </nav>
+        </div>
+
+    </header>
+    
+    <section class = 'main-section' id ='main-section'>
+        <main class = 'main-div'>
+            <div class='add-book'>
+                <div class = 'add-poza-titlu'>
+                    <div class ='desc-produs'>
+                        <img class = 'img' alt='book' src='./img/add-book.jpg'>
+                    </div>
+                    <form>
+                        <br>
+                        <label for="book name">book name</label><br>
+                        <input class='add-input' type="text" id="book_name" name="book name" placeholder="book name"><br>
+            
+                        <label for="Price">Price</label><br>
+                        <input class='add-input' type="text" id="price" name="Price" placeholder="Price"><br>
+                        <label for="Image">Image link</label><br>
+                        <input class='add-input' type="text" id="Image" name="Image" placeholder="Image link"><br>
+                        
+                    </form>
+                </div>
+
+                <div class = 'descriere'>
+                   <h3>
+                       Add description:
+                   </h3>
+                   <form>
+                    <textarea name="message" class='add-input-desc' rows="20" cols="150"></textarea>
+                   </form>
+                   <br>
+
+                </div>
+                
+                <button type='button' class='add-book-btn'>
+                    Add the book!
+                </button>
+            </div>
+        </main>
+    </section>
+
+
+
+
+</body>
+</html>

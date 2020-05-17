@@ -1,0 +1,44 @@
+cerinte TW
+
+Criterii de acceptanta:
+
+X   aplicatia sa fie Single Page Application 
+X   codul sursa (nearhivat) al proiectului trebuie sa fie salvat pe GitHub X
+X   nu puteti folosi librarii, framework-uri CSS sau JavaScript (cum ar fi jQuery, Bootstrap, Angular, React, etc) pentru realizarea frontend-ului X
+
+    Atentie! Orice proiect booke nu respecta criteriile de acceptanta este evaluat la 0 puncte.
+
+Frontend (maxim 17 puncte)
+HTML si CSS (maxim 8 puncte)
+
+X    Fisiere separate pentru HTML si CSS (0.5 puncte)
+X(header, nav, main, section)    In interiorul documentelor HTML, sa se foloseasca minim 4 taguri semantice (1 punct)
+X    Stilurile CSS sa fie definite folosind clase direct pe elementele booke trebuie stilizate (minim 80% din selectori) (0.5 punct)
+X    Layout-ul sa fie impartit in minim 2 coloane si sa fie realizat cu Flexbox si/sau CSS grid (2 puncte)
+X    Site-ul sa fie responsive, respectand rezolutiile urmatoarelor dispozitive folosind media queries: (4 puncte)
+X        telefon mobil - latime mai mica 768px
+X        tableta - latime intre 768px si 1280px
+X        desktop - latime mai mare de 1280px
+
+Javascript (maxim 9 puncte)
+
+X    Fisier separat JavaScript (0.5 puncte)
+X    Manipularea DOM-ului (crearea, editarea si stergerea elementelor/nodurilor HTML) (3 puncte)
+X    Folosirea evenimentelor JavaScript declansate de mouse/tastatura (1 punct)
+X    Utilizarea AJAX (GET, POST, PUT, DELETE) (4 puncte)
+X    Folosirea localStorage (0.5 puncte)
+
+Backend API (maxim 8 puncte)
+
+    Creare server Backend (2 puncte)
+    CRUD API (Create, Read, Update si Delete) pentru a servi Frontend-ului (6 puncte)
+
+Punctaj subiectiv (maxim 5 puncte)
+
+Ne vom imagina ca aplicatia trebuie prezentata unui client, booke va aprecia, de exemplu:
+
+    calitatea sustinerii prezentarii proiectului
+    designul (sa arate placut si ingrijit)
+    utilitatea (sa rezolve probleme reale)
+    stabilitatea (sa NU contina defecte evidente)
+    complexitatea (sa aiba mai multe ecrane, layout-ul sa fie mai complex etc.)
