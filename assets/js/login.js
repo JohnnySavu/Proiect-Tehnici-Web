@@ -23,7 +23,6 @@ document.addEventListener('click',function(e)
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
-                <button type='button' class='nav-button' id = 'contact-btn'> Contact </button>
                 <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
                 <button type='button' class='nav-button' id = 'modify-list-btn'> Modify List</button>
                 `
@@ -43,7 +42,6 @@ document.addEventListener('click',function(e)
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
-                <button type='button' class='nav-button' id = 'contact-btn'> Contact </button>
                 <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
                 `
                 document.getElementById("home-btn").addEventListener("click", goHome);
@@ -85,7 +83,6 @@ document.addEventListener('click', function(e)
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
-                <button type='button' class='nav-button' id = 'contact-btn'> Contact </button>
                 <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
                 `
                 document.getElementById("home-btn").addEventListener("click", goHome);
