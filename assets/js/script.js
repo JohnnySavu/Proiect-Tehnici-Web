@@ -339,9 +339,8 @@ function goHome(){
     `;
     if (localStorage['loged'] == 'true')
     {
-        
+        document.getElementById('welcome').innerHTML = "Welcome, " + localStorage['user'] +"!";
     }
 }
-
 
 
