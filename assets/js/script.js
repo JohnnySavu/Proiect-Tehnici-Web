@@ -104,7 +104,7 @@ function modifyItem(book)
 
 }
 
-
+//----
 
 function goModifiy()
 {
@@ -124,7 +124,7 @@ function goModifiy()
     fetch('http://localhost:3000/books')
     .then(function (response) {
         // Trasform server response to get the dogs
-        response.json().then(function (books) {
+        response.json().then(function (books) {      
             for(let i = 0; i < books.length; i++)
             {
                 let div_id = document.createElement("div");
