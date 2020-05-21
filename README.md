@@ -135,7 +135,11 @@ app.delete("/books/:id", (req, res) => {
   
 fetch('http://localhost:3000/books')
 
-fetch(`http://localhost:3000/books/${book.id}`
+fetch(`http://localhost:3000/books/${book.id}`, {
+            method: 'PUT',
+            headers: {
+                "Content-type": "application/json"
+            },
 
 local storage:
 
