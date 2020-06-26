@@ -77,7 +77,9 @@ function modifyItem(book)
             price: document.getElementById("price").value,
             description:document.getElementById("book-desc").value,
             img:document.getElementById("Image").value,
-            id:book.id
+            id:book.id,
+            token : localStorage["token"]
+
         }
         fetch(`http://localhost:3000/books/${book.id}`, {
             method: 'PUT',
@@ -94,12 +96,21 @@ function modifyItem(book)
     //aici sterg elementul
     document.getElementById("delete-book-btn").addEventListener('click',function()
     {
-        fetch(`http://localhost:3000/books/${book.id}`, {
-        method: 'DELETE',
-    }).then(function () {
-        //console.log(response);
-        goModifiy();
-    }); 
+        console.log("sterge mane");
+        let obj = {
+            "id" : book.id,
+            "token" : localStorage["token"]
+        }
+        fetch('http://localhost:3000/delete-books-admin', {
+        method: 'put',
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify(obj)
+        }).then(function(){
+            console.log("fmdieiwmfimewifmwe");
+            goModifiy();
+        });
     });
 
 }

@@ -17,7 +17,9 @@ document.addEventListener('click',function(e)
             fetch('http://localhost:3000/login2')
             .then(function (response) { 
                 response.json().then(function (res) {
-            if (res == "admin")
+                    localStorage.setItem("token", res["token"]);
+                    console.log(localStorage["token"]);
+            if (res["val"] == "admin")
             {
                 document.getElementById("navigator").innerHTML = `
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
@@ -36,7 +38,7 @@ document.addEventListener('click',function(e)
                 localStorage.setItem("user", "Administrator");
                 goHome();
             }
-            if(res == 'loged')
+            if(res["val"] == 'loged')
             {
                 document.getElementById("navigator").innerHTML = `
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
@@ -79,6 +81,10 @@ document.addEventListener('click', function(e)
         },
         body: JSON.stringify(obj)
         }).then(function (response) {
+            response.json().then(function (res){
+                localStorage.setItem("token", res);
+                console.log(localStorage["token"]);
+            })
             document.getElementById("navigator").innerHTML = `
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>

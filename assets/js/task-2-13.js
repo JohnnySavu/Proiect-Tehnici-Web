@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener("click", function(){
     setTimeout(() => {
     
@@ -12,7 +9,6 @@ document.addEventListener("click", function(){
     words.replace(";", " ");
     words = words.split(" ").length;
     document.getElementById("no-words").innerHTML = "Total number of words in body are: " + words;
-
 
     }, 100);
     

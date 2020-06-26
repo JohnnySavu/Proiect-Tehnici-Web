@@ -44,18 +44,28 @@ function buybooks(book)
     </div>
 </main>
     `;
+    console.log("mfiemfie");
     document.getElementById("display-book").src = book.img;
     document.getElementById("book_name").value = book.name;
     document.getElementById("author_name").value = book.author;
     document.getElementById("price").value = book.price;
     document.getElementById('book_desc').value = book.description;
     document.getElementById("buy-now-book-btn").addEventListener('click', function(){
-  
-        fetch(`http://localhost:3000/books/${book.id}`, {
-        method: 'DELETE',
-        }).then(function () {
-        showThanks();
-    }); 
+        
+        let obj = {
+            "id" : book.id,
+            "token" : localStorage["token"]
+        }
+        fetch('http://localhost:3000/delete-books', {
+        method: 'put',
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify(obj)
+        }).then(function(){
+            console.log("fmdieiwmfimewifmwe");
+            showThanks();
+        });
     });
 
 
