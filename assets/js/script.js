@@ -96,7 +96,6 @@ function modifyItem(book)
     //aici sterg elementul
     document.getElementById("delete-book-btn").addEventListener('click',function()
     {
-        console.log("sterge mane");
         let obj = {
             "id" : book.id,
             "token" : localStorage["token"]
@@ -108,7 +107,6 @@ function modifyItem(book)
         },
         body: JSON.stringify(obj)
         }).then(function(){
-            console.log("fmdieiwmfimewifmwe");
             goModifiy();
         });
     });

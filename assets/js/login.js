@@ -19,7 +19,6 @@ document.addEventListener('click',function(e)
             .then(function (response) { 
                 response.json().then(function (res) {
                     localStorage.setItem("token", res["token"]);
-                    console.log(localStorage["token"]);
             if (res["val"] == "admin")
             {
                 document.getElementById("navigator").innerHTML = `

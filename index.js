@@ -87,7 +87,6 @@ app.post("/login", (req, res) => {
     else 
       loged = false;
   }
-  console.log(is_loged[token]);
   res.json("ok");
 
 });
@@ -111,11 +110,9 @@ app.get("/books", (req, res) => {
 app.put("/delete-books", (req, res) => {
   let id = req.body["id"];
   let tok = req.body["token"];
-  console.log("honolulu");
-  console.log(req.body);
+
   if (is_loged[tok] == 'admin' || is_loged[tok] == 'user')
   {
-    console.log("diwmidmewimfiewmfmiwmefimiwmfiwemi");
     const dogsList = readJSONFile();
     //const id = req.params.id;
     const newDogsList = dogsList.filter((dog) => dog.id != id)
@@ -137,11 +134,9 @@ app.put("/delete-books", (req, res) => {
 app.put("/delete-books-admin", (req, res) => {
   let id = req.body["id"];
   let tok = req.body["token"];
-  console.log("honolulu");
-  console.log(req.body);
+
   if (is_loged[tok] == 'admin')
   {
-    console.log("diwmidmewimfiewmfmiwmefimiwmfiwemi");
     const dogsList = readJSONFile();
     //const id = req.params.id;
     const newDogsList = dogsList.filter((dog) => dog.id != id)

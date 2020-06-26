@@ -44,7 +44,6 @@ function buybooks(book)
     </div>
 </main>
     `;
-    console.log("mfiemfie");
     document.getElementById("display-book").src = book.img;
     document.getElementById("book_name").value = book.name;
     document.getElementById("author_name").value = book.author;
@@ -63,7 +62,6 @@ function buybooks(book)
         },
         body: JSON.stringify(obj)
         }).then(function(){
-            console.log("fmdieiwmfimewifmwe");
             showThanks();
         });
     });
