@@ -200,6 +200,45 @@ app.put("/books/:id", (req, res) => {
 });
 
 
+app.put("/putuser", (req, res) => {
+  let booksList = readUsers();
+  let newUser = req.body;
+  //let newbook = req.body;
+  let idFound = false;
+
+    const newbooksList = booksList.map((book) => {
+      if (book.username == newUser.username) {
+        idFound = true;
+        book.password = newUser.password;
+        return book
+      }
+      return book
+    })
+    
+    writeUsers(newbooksList);
+
+    if (idFound) {
+      res.json("lol");
+    } else {
+      res.status(404).send(`book ${id} was not found`);
+    }
+
+});
+
+app.put("/deleteuser", (req, res) => {
+  const dogsList = readUsers();
+  let del = req.body;
+  //const id = req.params.id;
+  const newDogsList = dogsList.filter((dog) => !(dog.username == del.username && dog.password == del.password) )
+
+  if (dogsList.length !== newDogsList.length) {
+    res.status(200).send(`Dog was removed`);
+    writeUsers(newDogsList);
+  } else {
+    res.status(404).send(`Dog  was not found`);
+  }
+});
+
 app.delete("/books/:id", (req, res) => {
     const dogsList = readJSONFile();
     const id = req.params.id;

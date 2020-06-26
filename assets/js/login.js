@@ -27,6 +27,8 @@ document.addEventListener('click',function(e)
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
                 <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
+                <button type='button' class='nav-button' id = 'go-quiz-btn'> Quiz </button>
+                <button type='button' class='nav-button' id = 'go-modify-users'> Modify Users </button>
                 <button type='button' class='nav-button' id = 'modify-list-btn'> Modify List</button>
                 `
                 document.getElementById("home-btn").addEventListener("click", goHome);
@@ -45,6 +47,7 @@ document.addEventListener('click',function(e)
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
+                <button type='button' class='nav-button' id = 'go-quiz-btn'> Quiz </button>
                 <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
                 `
                 document.getElementById("home-btn").addEventListener("click", goHome);
@@ -66,7 +69,7 @@ document.addEventListener('click',function(e)
 
 document.addEventListener('click', function(e)
 {
-   // console.log("lamyyyy");
+
     if(e.target && e.target.id == 'submit-sign-up')
     {
         let obj = 
@@ -90,6 +93,7 @@ document.addEventListener('click', function(e)
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
+                <button type='button' class='nav-button' id = 'go-quiz-btn'> Quiz </button>
                 <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
                 `
                 document.getElementById("home-btn").addEventListener("click", goHome);
