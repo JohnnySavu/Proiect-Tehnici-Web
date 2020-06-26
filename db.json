@@ -38,6 +38,12 @@
 			"username": "Bob",
 			"password": "Bob",
 			"email": "Bob@gmail.com"
+		},
+		{
+			"username": "Bob2",
+			"password": "Bob2",
+			"email": "Bob2",
+			"id": "cfd889d0-b7e5-11ea-a56e-d7a6275294fc"
 		}
 	]
 }
