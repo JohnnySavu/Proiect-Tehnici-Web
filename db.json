@@ -10,6 +10,7 @@
 		},
 		{
 			"name": "The Karamazov Brothers",
+			"author" : "Fyodor Mikhailovich",
 			"price": "10$",
 			"description": "The Brothers Karamazov is a passionate philosophical novel set in 19th-century Russia, that enters deeply into the ethical debates of God, free will, and morality.\nIt is a spiritual, theological drama of moral struggles concerning faith, doubt, judgment, and reason, set against a modernizing Russia, with a plot which revolves around the subject of patricide.",
 			"img": "img/TKB.jpg",
