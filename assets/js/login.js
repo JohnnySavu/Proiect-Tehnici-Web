@@ -25,13 +25,15 @@ document.addEventListener('click',function(e)
                 <button type='button' class='nav-button' id='home-btn'> Home </button>
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
-                <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
                 <button type='button' class='nav-button' id = 'go-quiz-btn'> Quiz </button>
                 <button type='button' class='nav-button' id = 'go-modify-users'> Modify Users </button>
                 <button type='button' class='nav-button' id = 'modify-list-btn'> Modify List</button>
+                <button type='button' class='nav-button' id = 'go-morse-code'> Have fun </button>
+                <button type='button' class='nav-button' id = 'log-out-out-btn'> Log out </button>
                 `
                 document.getElementById("home-btn").addEventListener("click", goHome);
-                document.getElementById("log-in-btn").addEventListener("click", goLogIn);
+                //document.getElementById("log-in-btn").addEventListener("click", goLogIn);
+                document.getElementById("log-out-out-btn").addEventListener("click", goLogOut);
                 document.getElementById("search-books-btn").addEventListener("click", goSearchbooks);
                 document.getElementById("add-books-btn").addEventListener("click", goAddbooks);
                 
@@ -47,10 +49,12 @@ document.addEventListener('click',function(e)
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
                 <button type='button' class='nav-button' id = 'go-quiz-btn'> Quiz </button>
-                <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
+                <button type='button' class='nav-button' id = 'go-morse-code'> Have fun </button>
+                <button type='button' class='nav-button' id = 'log-out-out-btn'> Log out </button>
                 `
                 document.getElementById("home-btn").addEventListener("click", goHome);
-                document.getElementById("log-in-btn").addEventListener("click", goLogIn);
+                //document.getElementById("log-in-btn").addEventListener("click", goLogIn);
+                document.getElementById("log-out-out-btn").addEventListener("click", goLogOut);
                 document.getElementById("search-books-btn").addEventListener("click", goSearchbooks);
                 document.getElementById("add-books-btn").addEventListener("click", goAddbooks);
                 localStorage.setItem("loged","true"); 
@@ -93,12 +97,14 @@ document.addEventListener('click', function(e)
                 <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
                 <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
                 <button type='button' class='nav-button' id = 'go-quiz-btn'> Quiz </button>
-                <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
+                <button type='button' class='nav-button' id = 'go-morse-code'> Have fun </button>
+                <button type='button' class='nav-button' id = 'log-out-out-btn'> Log out </button>
                 `
                 document.getElementById("home-btn").addEventListener("click", goHome);
-                document.getElementById("log-in-btn").addEventListener("click", goLogIn);
+                //document.getElementById("log-in-btn").addEventListener("click", goLogIn);
                 document.getElementById("search-books-btn").addEventListener("click", goSearchbooks);
                 document.getElementById("add-books-btn").addEventListener("click", goAddbooks);
+                document.getElementById("log-out-out-btn").addEventListener("click", goLogOut);
                 localStorage.setItem("loged","true"); 
                 localStorage.setItem("user", document.getElementById("username2").value);
                 goHome();  
@@ -109,6 +115,25 @@ document.addEventListener('click', function(e)
 }
 
 );
+
+function goLogOut()
+{
+    localStorage.setItem("loged","false");
+    document.getElementById("navigator").innerHTML = `
+                <button type='button' class='nav-button' id='home-btn'> Home </button>
+                <button type='button' class='nav-button' id = 'search-books-btn'> Search books </button>
+                <button type='button' class='nav-button' id = 'add-books-btn'> Add books </button>
+                <button type='button' class='nav-button' id = 'go-quiz-btn'> Quiz </button>
+                <button type='button' class='nav-button' id = 'go-morse-code'> Have fun </button>
+                <button type='button' class='nav-button' id = 'log-in-btn'> Log in </button>
+                `
+                document.getElementById("home-btn").addEventListener("click", goHome);
+                document.getElementById("log-in-btn").addEventListener("click", goLogIn);
+                document.getElementById("search-books-btn").addEventListener("click", goSearchbooks);
+                document.getElementById("add-books-btn").addEventListener("click", goAddbooks);
+    goHome();
+}
+
 
 function goHome(){
     
